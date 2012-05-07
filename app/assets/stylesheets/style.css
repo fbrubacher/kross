@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	background: url(fondo.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+/* =============================================================================
+   Resets (Do not edit unless necessary)
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+a:focus { outline: none; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }  
+
+h1 { font-weight: bold; font-family: 'HelveticaLTStdCondBold' , Arial, Helvetica, sans-serif; text-transform:uppercase; }
+h2 { font-weight: bold; font-family: 'HelveticaLTStdCondBold' , Arial, Helvetica, sans-serif; font-size:16px; }
+
+p { font-family: 'HelveticaLTStdCondBold' , Arial, Helvetica, sans-serif; font-size:14px; }
+
+
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+form { margin: 0; float:left; }
+fieldset { border: 0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+label { cursor: pointer; }
+button, input, select, textarea { font-family: 'HelveticaLTStdCondBold';
+	font-size:12px; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+
+/* =============================================================================
+   Default styles
+   ========================================================================== */
+
+/* Default Body Styles */
+
+
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+/* Font Styles for Entire Site */
+body, button, input, select, textarea {
+	color: #F30;
+	font-family: 'HelveticaLTStdCondBold';
+	font-size:12px;
+}
+
+/* Link Styles */
+a { color: #fff; text-decoration: none; }
+a:hover { color: #000; }
+
+/* Selection Color */
+::-moz-selection { background: #000; color: #fff; text-shadow: none; }
+::selection { background: #000; color: #fff; text-shadow: none; }
+
+
+
+/* Main Styles */
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+#description {
+	display: none;
+}
+
+span.arrow {
+	position: absolute;
+	margin-left: -15px;
+	left: 50%;
+	width: 30px; height: 15px;
+}
+
+#countdown {
+	background:#F30;
+	color: #CEAD63;
+	padding-top: 40px;
+	height: 280px;
+	margin-top: -325px;
+}
+
+	#countdown section {
+		margin: 0 auto;
+		width: 900px;
+	}
+	
+	#countdown .count {
+		float: left;
+		overflow: auto;
+		margin-right: 50px;
+	}
+	
+		#countdown .count .numbers {
+			border-right: 2px #CEAD63 solid;
+			color: #FFF;
+			float: left;
+			font-size: 42px;
+			margin-right: 40px;
+			padding-right: 40px;
+			text-align: right;
+			overflow: hidden;
+			width: 100px;
+		}
+		
+			#countdown .count .numbers .countdown_section {
+				display: block;
+				height: 55px;
+			}
+			
+		#countdown .count .descriptions {
+			float: right;
+		}
+		
+			#countdown .count .descriptions h3 {
+				font-size: 14px;
+				letter-spacing: 3px;
+				line-height: 55px;
+				height: 55px;
+			}
+			
+	#countdown .or-so {
+		padding-top: 25px;
+		text-align: center;
+	}
+	
+		#countdown .or-so h1 {
+			color: #FFF;
+			font-size: 100px;
+			letter-spacing: -1px;
+			margin-bottom: 0;
+		}
+		
+		#countdown .or-so h4 {
+			margin: 0;
+		}
+	
+		#countdown .or-so span {
+			font: normal 200px "Sackers Roman W01 Heavy";
+			line-height: 150px;
+			overflow: hidden;
+			height: 200px;
+		}
+		
+			#countdown .or-so span.left { float: left; }
+			#countdown .or-so span.right { float: right; }
+
+.countdown {
+	background:#F30;
+	color: #FFF;
+	display: block;
+	letter-spacing: 4px;
+	position: relative;
+	margin: 0;
+	min-width: 1000px;
+	font-family: 'HelveticaLTStdCondBold';
+	font-size: 15px;
+	padding: 15px 0;
+	text-align: center;
+	cursor:pointer;
+}
+	.countdown:hover, .countdown.selected {
+		background:#F60;
+	}
+	
+	.countdown.selected {
+		cursor: url(https://mail.google.com/mail/images/2/closedhand.cur), default !important;
+	}
+	
+	.countdown span.arrow {
+		background: url(../images/arrow-top.png) no-repeat;
+		bottom: -10px;
+	}
+	
+		.countdown:hover span.arrow, .countdown.selected span.arrow {
+			background-position: 0 -15px;
+		}
+
+#main {
+	min-height: 450px;
+	margin: 20px auto 0;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	width: 1000px;
+}
+
+	#main h1 {
+		border-bottom: 3px #404041 solid;
+		color: #3a3a3c;
+		font-size: 4em;
+		letter-spacing: 3px;
+		margin: 370px 0 0 0;
+		padding: 0 0 40px 0;
+		position: relative;
+		text-transform: lowercase;
+	}
+	
+h4 {
+	color: #939497;
+	letter-spacing: 2px;
+}
+
+.arrow-line {
+	margin: 0 auto;
+	width: 800px; height: 20px;
+}
+
+	.arrow-line.bottom { background-position: 0 -20px; }
+
+
+.featured {
+	text-align: center;
+	margin: 20px 0;
+}
+
+	.featured > div { cursor: pointer; display: none; }
+	
+	.featured > div div {
+		margin: 5px auto 0;
+		overflow: hidden;
+		width: 500px;
+	}
+	
+		.featured > div.croque-madam div, .featured > div.portacatoosa div {
+			width: 600px;
+		}
+	
+	.featured h4 {
+		font-size: 16px;
+		margin: 10px 0 0 0;
+	}
+	
+	.featured span {
+		font: normal 75px "Sackers Roman W01 Heavy";
+		line-height: 60px;
+		overflow: hidden;
+		height: 75px;
+	}
+	
+		.featured span.left { float: left; }
+		.featured span.right { float: right; }
+
+.line {
+	background: #404041;
+	height: 3px;
+	margin: 30px 0 -12px;
+}
+
+.tagline {
+	color: #939497;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-align: right;
+	line-height: 60px;
+}
+
+	.tagline img {
+		float: right;
+		margin-left: 10px;
+	}
+
+#map {
+	border-top: 4px #404041 solid;
+	height: 330px;
+	margin-top: 50px;
+	min-width: 1000px;
+	text-indent: -9999px;
+}
+
+.copyright {
+	background:#F30;
+	color: #FFF;
+	font-size: 10px;
+	letter-spacing: 2px;
+	width:500px;
+	padding: 15px 0;
+	position: relative;
+	text-align: center;
+	margin:0 auto ;
+}
+
+
+
+/* Image Replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Clear Floats */
+.clear { clear: both; }
+
+
+/* =============================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+/* Mobile Size */
+@media only screen and (min-width: 320px) and (max-width : 730px) {
+  
+	
+}
+
+/* Tablet Size */
+@media only screen and (min-width: 730px) and (max-width: 1024px)  {
+
+
+}
